@@ -1,13 +1,14 @@
-# migrate_git_repo_to_svn
+# migrate git repository to svn repository
 
 
 # Background:
 I am working on a project using gitlab. For some reason, I had to migrate the whole repo to svn, without losing any git log.
 
-After googling a long time, I decided to write a script to do the job.  And also, I had already used it, and it works Great.
+After googling a long time, I decided to write a script to do the job.  And also, I had already used it, and it worked Great.
 
 **This script will do no harm to the git repo, all it needs is clone your git repo to local folder, and provide an empty svn folder. That's all.**
 
+---
 
 # Env Requirements:
 1. Mac.     (I tested on macos Catalina, but it should work on windows powershell or linux shell).
@@ -24,6 +25,7 @@ After googling a long time, I decided to write a script to do the job.  And also
 4. Get yourself a cup of coffee, and waiting. It may take several hours, depending on how large your git repo is.(It took me 3 hours to migrate about 2k git commits...)
 
 
+---
 
 # Note（!important!）：
 1. Submodule folder is not supported default. Submodule is such a terrble design in git, which is the main reason I abandon git. But, you can also use `migrate_git_repo_to_svn.py` to migrate submodule folder:
