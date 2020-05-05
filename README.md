@@ -19,8 +19,8 @@ After googling a long time, I decided to write a script to do the job.  And also
 # Usage:
 1. Clone git repo to disk, also checkout an EMPTY svn folder to disk.
 2. Config `migrate_git_repo_to_svn.py`:
-   1. fill `git_repo_path` and `svn_repo_path` with local path.
-   2. if you want every svn commit with the right author, config `commiter_mapping_info` with all team member's username and password. Ofcourse, if you do not care, leave it as it is.
+   - fill `git_repo_path` and `svn_repo_path` with local path.
+   - if you want every svn commit with the right author, config `commiter_mapping_info` with all team member's username and password. Ofcourse, if you do not care, leave it as it is.
 3. Run command in shell: `python3 migrate_git_repo_to_svn.py`
 4. Get yourself a cup of coffee, and waiting. It may take several hours, depending on how large your git repo is.(It took me 3 hours to migrate about 2k git commits...)
 
@@ -38,8 +38,8 @@ After googling a long time, I decided to write a script to do the job.  And also
 # How it works：
 1. Get all git log.
 2. In descending order, looping the git logs, get every git commit sha:
-   1. Reset local git repo to that commit sha.
-   2. Clear svn folder, and copy everything from git folder except `.git` to local svn folder.
-   3. In svn folder, use `svn add` and `svn delete` to record all file changes, and then `svn commit` them, using the same git log.
+   - Reset local git repo to that commit sha.
+   - Clear svn folder, and copy everything from git folder except `.git` to local svn folder.
+   - In svn folder, use `svn add` and `svn delete` to record all file changes, and then `svn commit` them, using the same git log.
   (also using the same git author, if you provide svn username and password)
 3. The step 2 will loop every git commit, and migrate them to svn, until all git commits is migrated.
