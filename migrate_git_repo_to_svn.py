@@ -7,11 +7,11 @@ import shutil
 from datetime import datetime 
 
 
-# your local git local path
+# todo: your local git local path
 git_repo_path = "replace with your local git repo path"
 svn_repo_path = "replace with local svn folder path" # better to be an empty svn folder
 
-# if you want to keep author info, config the following info
+# todo: if you want to keep author info, config the following info
 commiter_mapping_info = [
 	# {
 	# 	'git_user_name' : '# replace: git commiter name 1',
@@ -25,7 +25,7 @@ commiter_mapping_info = [
 	},
 ]
 
-# set to 'None' to start migrating from beginning. 
+# todo: set to 'None' to start migrating from beginning. 
 migrate_from_git_sha = None
 
 
