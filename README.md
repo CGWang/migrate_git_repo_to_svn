@@ -28,9 +28,9 @@ After googling a long time, I decided to write a script to do the job.  And also
 
 # Note（!!!important!!!）：
 1. Submodule folder is not supported default. Submodule is such a terrble design in git, which is the main reason I abandon git. But, you can also use `migrate_git_repo_to_svn.py` to migrate submodule folder:
-   1. For example, my git repo `git_repo` has a submodule called `git_repo\stupid_submodule_folder`, then
-   2. Config `migrate_git_repo_to_svn.py`, fill `git_repo_path` with `git_repo\stupid_submodule_folder`, and fill `svn_repo_path` with `svn_repo\stupid_submodule_folder`.
-   3. Make sure your local submodule folder is on the master branch! (Usually it's not)
+   - For example, my git repo `git_repo` has a submodule called `git_repo\stupid_submodule_folder`, then
+   - Config `migrate_git_repo_to_svn.py`, fill `git_repo_path` with `git_repo\stupid_submodule_folder`, and fill `svn_repo_path` with `svn_repo\stupid_submodule_folder`.
+   - Make sure your local submodule folder is on the master branch! (Usually it's not)
 2. While migrating, it may went wrong sometimes, due to some stange filenames which `svn commit` do not support, I have fixed most of them. If there are some conditions I missed, and when you fixed it, you can use `migrate_from_git_sha`  to tell the script to continue  migrating from the specified git commit, other than starting all over again.
 
 
