@@ -10,8 +10,7 @@ After googling a long time, I decided to write a script to do the job.  And also
 
 
 # Env Requirements:
-1. Mac. 
-  --(I tested on macos Catalina, but it should work on windows powershell or linux shell).
+1. Mac.     (I tested on macos Catalina, but it should work on windows powershell or linux shell).
 2. Python3.
 
 
