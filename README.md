@@ -6,7 +6,7 @@ I am working on a project using gitlab. For some reason, I had to migrate the wh
 
 After googling a long time, I decided to write a script to do the job.  And also, I had already used it, and it works Great.
 
-This script will do no harm to the git repo, all it needs is clone your git repo to local folder, and provide an empty svn folder. That's all.
+**This script will do no harm to the git repo, all it needs is clone your git repo to local folder, and provide an empty svn folder. That's all.**
 
 
 # Env Requirements:
