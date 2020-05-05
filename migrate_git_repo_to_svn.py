@@ -1,4 +1,6 @@
 # coding:utf-8
+# author: CGWang
+# git_repo: https://github.com/CGWang/migrate_git_repo_to_svn
 
 import os
 import shutil
